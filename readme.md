@@ -1,4 +1,4 @@
-# No-Sweat™ Eslint and Prettier Setup
+# Linting and Formatting configuration with ESlint and Prettier
 These are my settings for ESLint and Prettier
 
 You might like them - or you might not. Don't worry you can always change them.
@@ -8,7 +8,7 @@ You might like them - or you might not. Don't worry you can always change them.
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://raw.githubusercontent.com/BlazeIsClone/eslint-config-blaze/master/.eslintrc.js) 
 
 ## Installing
 
@@ -26,7 +26,7 @@ I also install globally so that any project or rogue JS file I write will have l
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-wesbos
+npx install-peerdeps --dev eslint-config-blaze
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -35,15 +35,15 @@ npx install-peerdeps --dev eslint-config-wesbos
 
 ```json
 {
-  "extends": [ "wesbos" ]
+  "extends": [ "blaze" ]
 }
 ```
 
-For TypeScript projects, use `wesbos/typescript`.
+For TypeScript projects, use `blaze/typescript`.
 
 ```json
 {
-  "extends": [ "wesbos/typescript" ]
+  "extends": [ "blaze/typescript" ]
 }
 ```
 
@@ -70,7 +70,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "wesbos"
+    "blaze"
   ],
   "rules": {
     "no-console": 2,
@@ -119,12 +119,12 @@ Finally you'll usually need to restart VS code. They say you don't need to, but 
 
 ## With Create React App
 
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "wesbos"`
+1. Run `npx install-peerdeps --dev eslint-config-blaze`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "blaze"`
 
 ## With Gatsby
 
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
+1. Run `npx install-peerdeps --dev eslint-config-blaze`
 1. If you have an existing `.prettierrc` file, delete it.
 1. follow the `Local / Per Project Install` steps above
 
@@ -162,8 +162,8 @@ The following steps are for a typical Node / ESLint global installtion.  If you 
 
 ## With Typescript
 
-Same instructions as above, just make sure you extend `wesbos/typescript` instead of just `wesbos`.
+Same instructions as above, just make sure you extend `blaze/typescript` instead of just `blaze`.
 
 ## With Yarn
 
-It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev eslint-config-wesbos -Y`
+It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev eslint-config-blaze -Y`
