@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-wesbos",
-  "version": "2.1.0",
-  "description": "ESLint and Prettier Config from Wes Bos",
+  "name": "lint-format-config",
+  "version": "1.0.0",
+  "description": "linting and formatting configuration",
   "keywords": [
     "javascript",
     "typescript",
@@ -12,8 +12,8 @@
     "prettier"
   ],
   "main": "index.js",
-  "repository": "git@github.com:wesbos/eslint-config-wesbos.git",
-  "author": "Wes bos <wes@wesbos.com>",
+  "repository": "git@github.com:BlazeIsClone/lint-format-config.git",
+  "author": "Blaze clone <sandevabeykoon123@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@babel/core": "^7.15.8",
